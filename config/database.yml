@@ -21,6 +21,8 @@ default: &default
 
 
 development:
+development:
+  url: <%= ENV["DATABASE_URL"] %>
   <<: *default
   database: portfolio_docker_development
 
