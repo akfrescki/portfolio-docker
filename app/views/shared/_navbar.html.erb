@@ -1,0 +1,34 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar shadow-sm">
+  <div class="container d-flex align-items-center justify-content-between">
+    <!-- Left side: Logo + name -->
+    <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#home">
+      <div class="logo-box d-flex align-items-center justify-content-center">
+        AF
+      </div>
+      Ana Frescki
+    </a>
+
+    <!-- Toggler (mobile) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Right side: Nav links + icons -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <!-- to make the hoover stays in the page -->
+      <ul class="navbar-nav align-items-center gap-lg-3" data-controller="scroll-nav" data-scroll-nav-target="link">
+        <li class="nav-item"><a class="nav-link" href="#home" data-scroll-nav-target="link">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about" data-scroll-nav-target="link">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education" data-scroll-nav-target="link">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects" data-scroll-nav-target="link">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact" data-scroll-nav-target="link">Contact</a></li>
+        <li class="nav-item d-flex align-items-center gap-3 ms-lg-4">
+          <a href="https://github.com/akfrescki" target="_blank" class="nav-icon"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/akfrescki" target="_blank" class="nav-icon"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#contact" class="btn btn-primary btn-sm px-3">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
