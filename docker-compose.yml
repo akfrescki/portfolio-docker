@@ -5,17 +5,3 @@ services:
       - .:/app
     ports:
       - "3000:3000"
-    depends_on:
-      - db
-    environment:
-      DATABASE_URL: postgres://postgres:password@db:5432/portfolio_docker_development
-
-  db:
-    image: postgres:16
-    environment:
-      POSTGRES_PASSWORD: password
-    volumes:
-      - pgdata:/var/lib/postgresql/data
-
-volumes:
-  pgdata:
