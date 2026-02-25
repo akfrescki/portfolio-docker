@@ -5,3 +5,4 @@ services:
       - .:/app
     ports:
       - "3000:3000"
+    command: bash -lc "rm -f tmp/pids/server.pid && ./bin/dev"
