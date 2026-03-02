@@ -1,3 +1,42 @@
 #projects {
     background-color: #000000;
 }
+    
+    .project-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.25rem;
+  overflow: hidden;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(11, 210, 228, 0.08),
+    0 0 18px rgba(11, 210, 228, 0.10);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(11, 210, 228, 0.25);
+
+  box-shadow:
+    0 14px 38px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(11, 210, 228, 0.14),
+    0 0 26px rgba(11, 210, 228, 0.18);
+}
+
+.project-body {
+  padding: 1.75rem 1.75rem 2rem;
+}
+
+.overlay-content {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
