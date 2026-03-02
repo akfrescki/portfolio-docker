@@ -1,3 +1,42 @@
 #skills {
     background-color: #000000;
 }
+
+.edu-card {
+  background: rgba(255, 255, 255, 0.04); // subtle, works on dark bg
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px); // optional, nice “glass”
+  border-radius: 1.25rem;
+
+  // Discreet depth + teal hint
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(11, 210, 228, 0.08),
+    0 0 18px rgba(11, 210, 228, 0.10);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+
+
+.tech-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  color: rgba(255, 255, 255, 0.85);
+
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tech-badge:hover {
+  transform: translateY(-2px);
+  border-color: rgba(11, 210, 228, 0.35);
+  box-shadow: 0 0 14px rgba(11, 210, 228, 0.20);
+  color: #fff;
+}
+

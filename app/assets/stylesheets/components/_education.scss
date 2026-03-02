@@ -1,3 +1,13 @@
 #education {
     background-color: #000000;
 }
+
+
+.edu-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(11, 210, 228, 0.25);
+  box-shadow:
+    0 14px 38px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(11, 210, 228, 0.14),
+    0 0 26px rgba(11, 210, 228, 0.18);
+}
