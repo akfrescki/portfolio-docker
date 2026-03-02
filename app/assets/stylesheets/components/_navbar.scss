@@ -16,9 +16,18 @@
   width: 36px;
   height: 36px;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(11, 210, 228);
   color: #fff;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
 
+section[id] {
+  scroll-margin-top: 90px; 
+}
+
+
+// footer
+.footer-block {
+  padding: 120px 0;
+}
