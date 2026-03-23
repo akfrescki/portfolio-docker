@@ -13,7 +13,12 @@ WORKDIR /app
 COPY Gemfile Gemfile.lock ./
 RUN bundle install
 
+COPY package.json package-lock.json ./
+RUN npm install
+
 COPY . .
+
+RUN RAILS_ENV=production SECRET_KEY_BASE_DUMMY=1 bundle exec rails assets:precompile
 
 EXPOSE 3000
 CMD ["bash", "-lc", "rm -f tmp/pids/server.pid && bundle exec rails s -b 0.0.0.0 -p $PORT"]
